@@ -15,7 +15,7 @@
         background-color: #242a4b;
         color: white;
         margin: auto;
-        padding-top: 35px;
+        /* padding-top: 35px; */
         transition: all ease-in 1s;
         animation-name: fadein;
         animation-duration: 0.3s;
@@ -35,7 +35,7 @@
       #controls button {
         cursor: pointer;
         display: inline;
-        padding: 20px;
+        padding: 10x 20px;
       }
       .hidden {
         display: none !important;
@@ -68,7 +68,7 @@
   </head>
   <body>
     <div class="fullscreen" id="page1">
-      <img src="media/Webinars logo.png" height="50" alt="r3i webinars logo" />
+      <img src="media/Webinars logo.png" height="45" alt="r3i webinars logo" />
       <h1> R3i Webinars Stream Test </h1>
       <br />
       <h2>
@@ -82,7 +82,7 @@
       </h2>
     </div>
     <div class="fullscreen hidden" id="page2">
-      <img src="media/Webinars logo.png" height="50" alt="r3i webinars logo" />
+      <img src="media/Webinars logo.png" height="45" alt="r3i webinars logo" />
       <h1> Please note, for best results:<br /> </h1>
       <br />
       <h2>
@@ -95,7 +95,7 @@
     </div>
 
     <div class="fullscreen hidden" id="page2a">
-      <img src="media/Webinars logo.png" height="50" alt="r3i webinars logo" />
+      <img src="media/Webinars logo.png" height="45" alt="r3i webinars logo" />
       <h1> This first step will measure your network bandwidth<br /> </h1>
       <br />
       <h2>
@@ -110,7 +110,12 @@
     </div>
 
     <div class="fullscreen hidden" id="page3">
-      <img src="media/Webinars logo.png" height="50" alt="r3i webinars logo" />
+      <img
+        src="media/Webinars logo.png"
+        height="45"
+        alt="r3i webinars logo"
+        style="margin-bottom: 10px"
+      />
       <h2>
         The next step will access your camera and microphone.<br /><br />
         <br />
@@ -126,7 +131,7 @@
       </h2>
     </div>
     <div id="mainapp" class="hidden">
-      <img src="media/Webinars logo.png" height="50" alt="r3i webinars logo" />
+      <img src="media/Webinars logo.png" height="45" alt="r3i webinars logo" />
       <h1> Video and stream quality check </h1>
       <div id="container"> </div>
       <div class="hidden" id="graphs">
@@ -567,7 +572,8 @@
         iframeContainer.appendChild(iframe1)
 
         var title = document.createElement('h3')
-        title.innerText = 'Select the camera you intend to use'
+        title.innerText =
+          'Select the camera you intend to use, then click "START"'
         title.id = 'localVideoText'
         iframeContainer.appendChild(title)
 
